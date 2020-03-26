@@ -1,0 +1,139 @@
+
+body {
+  font-family: "Veranda", Geneva, sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+button {
+  border-radius: 8px;
+  font-size: 16px;
+  border-color: black;
+  background-color: white;
+  padding-right: 8px;
+}
+
+/* Style the header */
+#banner {
+  font-family: "Veranda", Geneva, sans-serif;
+  background-color: #70a970;
+  padding: 10px;
+  vertical-align: -moz-middle-with-baseline; 
+  height 20px;
+  color: white;
+  font-size: x-large; 
+}
+a:hover {
+  background-color: #568f56;
+  color: black;
+}
+a:visited {
+  color: black;
+}
+#topnav {
+  width: 100%;
+  margin: 0px 0;
+  overflow: hidden;
+  background-color: #568f56;
+  float: right;
+}
+/*link style*/
+#topnav a { 
+  color: white; 
+}
+#topnav  {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+/* Change color on hover */
+#topnav a:hover {
+  background-color: #568f56;
+  color: black;
+}
+#topnav ul li {
+  width: 20%; 
+}
+#topnav ul li a {
+  display: block;
+  width: 100%;
+}
+#topnav ul {
+  width: 100%; 
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+#topnav ul li {
+      width: 20%; 
+      float: right; }
+
+#intro{
+  width: 590px;
+  padding: 20px;
+  background-color: #2e8b57;
+}
+.twocolumn {
+    float: left;
+    width: 50%;
+    text-align: left;
+  }
+  
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+#centered
+{
+  margin: auto;
+ // text-align: center;
+  width: 400px;
+  background: #afcfaf; 
+  padding: 50px;
+  font-size-adjust: 2.5 em;  
+}
+
+.threecolumn
+{
+    float: left;
+    width: 31%;
+    padding: 10px;
+    text-align: left;
+    height: 500px; 
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+h2{
+  text-align: center;
+}
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
