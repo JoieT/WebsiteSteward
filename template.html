@@ -1,0 +1,84 @@
+ <!DOCTYPE html>
+ <meta charset="utf-8"/>
+
+
+<head>
+    
+    <title>Steward - Create a Safe Space</title>
+    <link rel = "stylesheet"
+          href = "myStyle.css" />
+    <script>
+        function Doug(){
+
+            var choice = document.getElementsByName('choiceOne');
+            var val = "None selected";
+
+            for (var i=0; i < choice.length; i++) {
+                currentChoice = choice[i];
+                if ( currentChoice.checked ) { // radio checked?
+                    val = currentChoice.value; // if so, hold its value in val
+                    break; // and break out of for loop
+                }
+            }
+            var output = document.getElementById("output");
+            var response = "<h2> You selected " + val +  " <\h2> \n";
+            output.innerHTML = response;
+
+            //alert(choice.length);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    
+<div id = "banner">
+
+    <a href="Home.html"> 
+      <img src = "Images/cupped-hands-clipart-3.jpg" alt = "Cupped Hands" height="50" width = "50"> STEWARD
+    
+  </a>
+  </div>
+  <div id = "topnav">
+      <ul>
+        <li>
+          <a href="Support.html">SUPPORT</a>
+           
+        </li>
+        <li>
+            <a href="Dashboard.html">DASHBOARD</a>
+        </li>
+        <li>
+          <a href="Solutions.html">SOLUTIONS</a> 
+        </li>
+      </ul>
+  </div>
+ 
+      <fieldset>
+        <legend>Concern</legend>
+    
+      <div id="centered">
+    
+       <p><H2>Please select your primary concern for your loved one: </H2></p>
+          <input type="radio" name="choiceOne" value="Forgetfulness" />Forgetfulness<br>
+
+          <input type="radio" name="choiceOne" value="fallHazard" />fallHazard<br>
+
+          <input type="radio" name="choiceOne" value="PhysicalHealth" />PhysicalHealth<br>
+
+          <input type="radio" name="choiceOne" value="PeaceOfMind" />PeaceOfMind<br>
+
+          <input type="radio" name="choiceOne" value="Convenience" />Convenience<br>
+
+          <button onclick = "Doug();"> Submit </button>
+      </div>
+    </fieldset>
+      <div id = "output"></div>
+</body>
+ </html>
+    
+
+
+
+
