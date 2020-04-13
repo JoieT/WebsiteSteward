@@ -1,0 +1,27 @@
+{
+  "name": "WebsiteSteward",
+  "version": "1.0.0",
+  "description": "For Senior Project",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start" : "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoieT/WebsiteSteward.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoieT/WebsiteSteward/issues"
+  },
+  "homepage": "https://github.com/JoieT/WebsiteSteward#readme"
+}
