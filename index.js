@@ -23,6 +23,12 @@ app.get("/solutions", function(req,res){
  app.get("/template", function(req,res){
     res.render("template");
 });
+ app.get("/public/hands", function(req,res){
+    res.render("/public/hands");
+});
+ app.get("public/icon", function(req,res){
+    res.render("public/icon");
+});
 app.listen(port, () => {
  console.log("Server running on port 3000");
 });
