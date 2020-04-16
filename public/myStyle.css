@@ -1,4 +1,29 @@
 
+
+ </head>
+  <body>
+      <div id = "banner">
+        <h1>
+          <a href=/Home> 
+            <img src = "public/cupped-hands-clipart-3" alt = "Cupped Hands" height="50" width = "50"> STEWARD
+          
+        </a>
+      </h1> 
+      </div>
+      <div id = "topnav">
+          <ul>
+            <li>
+              <a href=/Support>SUPPORT</a>
+               
+            </li>
+            <li>
+                <a href=/Dashboard>DASHBOARD</a>
+            </li>
+            <li>
+              <a href=/Solutions>SOLUTIONS</a> 
+            </li>
+          </ul>
+      </div>
 body {
   font-family: "Veranda", Geneva, sans-serif;
   width: 100%;
