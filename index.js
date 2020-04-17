@@ -4,8 +4,9 @@ var bodyParser= require("body-parser");
 const port = process.env.PORT || 3000;
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
+
 app.get("/", (req,res) => {
- res.render("home"); //<— Change to main html file
+ res.render("home"); 
 });
 app.get("/support", function(req,res){
     res.render("support");
@@ -26,11 +27,11 @@ app.get("/solutions", function(req,res){
  app.get("/home", function(req,res){
     res.render("home");
 });
- app.get("/public/hands", function(req,res){
-    res.render("/public/hands");
+ app.get("hands", function(req,res){
+    res.render("hands");
 });
- app.get("/public/icon", function(req,res){
-    res.render("/public/icon");
+ app.get("icon", function(req,res){
+    res.render("icon");
 });
 app.listen(port, () => {
  console.log("Server running on port 3000");
