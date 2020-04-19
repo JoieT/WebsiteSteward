@@ -27,10 +27,10 @@ app.get("/solutions", function(req,res){
  app.get("/home", function(req,res){
     res.render("home");
 });
- app.get("/hands", function(req,res){
+ app.get("/hands.png", function(req,res){
     res.render("hands");
 });
- app.get("/icon", function(req,res){
+ app.get("/icon.jpg", function(req,res){
     res.render("icon");
 });
 app.listen(port, () => {
