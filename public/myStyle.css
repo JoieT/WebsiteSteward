@@ -1,36 +1,11 @@
 
-
- </head>
-  <body>
-      <div id = "banner">
-        <h1>
-          <a href=/Home> 
-            <img src = "public/cupped-hands-clipart-3" alt = "Cupped Hands" height="50" width = "50"> STEWARD
-          
-        </a>
-      </h1> 
-      </div>
-      <div id = "topnav">
-          <ul>
-            <li>
-              <a href=/Support>SUPPORT</a>
-               
-            </li>
-            <li>
-                <a href=/Dashboard>DASHBOARD</a>
-            </li>
-            <li>
-              <a href=/Solutions>SOLUTIONS</a> 
-            </li>
-          </ul>
-      </div>
 body {
   font-family: "Veranda", Geneva, sans-serif;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  background-image: url("/videotutorials/images/tutor_connect_home.jpg");
 }
-
 button {
   border-radius: 8px;
   font-size: 16px;

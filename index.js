@@ -24,6 +24,7 @@ app.get("/solutions", function(req,res){
  app.get("/template", function(req,res){
     res.render("template");
 });
+
  app.get("/home", function(req,res){
     res.render("home");
 });
@@ -35,4 +36,12 @@ app.get("/solutions", function(req,res){
 });
 app.listen(port, () => {
  console.log("Server running on port 3000");
+});
+
+app.post('/actionPage', function(req,res){
+    console.log(req.body)
+    var first = req.body.fName;
+    var email = req.body.email;
+    console.log(first + " " + email);
+    res.redirect("/support");
 });
