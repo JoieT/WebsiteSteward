@@ -8,10 +8,12 @@
     <link rel = "stylesheet"
           href = "myStyle.css" />
     <script>
-        function Doug(){
+        function Selection(){
 
             var choice = document.getElementsByName('choiceOne');
             var val = "None selected";
+            var forget = ["Alexa", "Medication Alert", "Photo Screen", "Smart Plugs"]
+        
 
             for (var i=0; i < choice.length; i++) {
                 currentChoice = choice[i];
@@ -21,7 +23,11 @@
                 }
             }
             var output = document.getElementById("output");
-            
+           if {
+               val = "Forgetfulness" then
+               var response = "These products may help with forgetfulness: /n"+ forget.toString(); + "/n"
+               
+           }            
             var response = "<h2> You selected " + val +  " <\h2> \n";
             output.innerHTML = response;
 
@@ -72,7 +78,7 @@
 
           <input type="radio" name="choiceOne" value="Convenience" />Convenience<br>
 
-          <button onclick = "Doug();"> Submit </button>
+          <button onclick = "Selection();"> Submit </button>
       </div>
     </fieldset>
       <div id = "output"></div>

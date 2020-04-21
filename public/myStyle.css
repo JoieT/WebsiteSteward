@@ -4,7 +4,7 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background-image: url("/videotutorials/images/tutor_connect_home.jpg");
+  background-image: /hands.png;
 }
 button {
   border-radius: 8px;
