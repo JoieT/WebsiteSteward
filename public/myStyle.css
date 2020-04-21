@@ -10,7 +10,7 @@ button {
   font-size: 16px;
   border-color: black;
   background-color: white;
-  padding-right: 8px;
+  text-align: center;
 }
 
 /* Style the header */
@@ -71,6 +71,14 @@ a:visited {
 .banner > .banner-img {
     width: 100%;
     display: block;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 #intro{
   width: 590px;
