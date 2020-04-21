@@ -4,7 +4,6 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  background-image: /hands.png;
 }
 button {
   border-radius: 8px;
@@ -15,17 +14,8 @@ button {
 }
 
 /* Style the header */
-#banner {
-  font-family: "Veranda", Geneva, sans-serif;
-  background-color: #70a970;
-  padding: 10px;
-  vertical-align: -moz-middle-with-baseline; 
-  height 20px;
-  color: white;
-  font-size: x-large; 
-}
 a:hover {
-  background-color: #568f56;
+  background-color: white;
   color: black;
 }
 a:visited {
@@ -33,7 +23,7 @@ a:visited {
 }
 #topnav {
   width: 100%;
-  margin: 0px 0;
+  margin: 0 0 0 0;
   overflow: hidden;
   background-color: white;
   float: right;
@@ -73,9 +63,15 @@ a:visited {
       float: right; }
 #topnav h1{
     float: left;
-    
 }
-
+.banner{
+    width: 100%;
+    display: block;
+}
+.banner > .banner-img {
+    width: 100%;
+    display: block;
+}
 #intro{
   width: 590px;
   padding: 20px;
