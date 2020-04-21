@@ -56,11 +56,12 @@ a:visited {
   width: 100%; 
   list-style: none;
   margin: 0;
-  padding: 25px 0 0 0; }
+  padding: 20px 0 0 0; }
 
 #topnav ul li {
       width: 20%; 
       float: right; }
+
 #topnav h1{
     float: left;
 }
@@ -79,6 +80,16 @@ a:visited {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+}
+.hero-text > form{
+
+  align-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; 
+  padding: 100px 20px 20px 20px
 }
 #intro{
   width: 590px;
@@ -124,6 +135,14 @@ a:visited {
   }
 h2{
   text-align: center;
+}
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
 }
 }
 
