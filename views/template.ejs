@@ -12,7 +12,7 @@
 
             var choice = document.getElementsByName('choiceOne');
             var val = "None selected";
-            var forget = ["Alexa", "Medication Alert", "Photo Screen", "Smart Plugs"]
+        var forget = ["Alexa, Medication Alert,Photo Screen, Smart Plugs" , "Smart Cane, Bed Alert, Webcams, Alexa", "Heart Rate Monitor, Blood Sugar Alert, Blood Pressure Monitor, Temperature Report", "Motion Detectors, Door Cameras, Alexa, Security lights"];
         
 
             for (var i=0; i < choice.length; i++) {
@@ -22,11 +22,14 @@
                     break; // and break out of for loop
                 }
             }
+                 
             var output = document.getElementById("output");         
-            var response = "<h2> You selected " + val +  " <\h2> \n";
+            var response = "You selected " + val + " \n";
             output.innerHTML = response;
+            var output2 = document.getElementById("output2");
 
-            //alert(choice.length);
+            var response2 = "<h2>These items may help you:</h2> \n";
+            output2.innerHTML = response2 + forget[i];
 
         }
 
@@ -43,26 +46,23 @@
             <li><a href=/solutions>SOLUTIONS</a></li>
         </ul>
  
-      <fieldset>
-        <legend>Concern</legend>
     
-      <div id="centered">
+      <fieldset style="margin-top: 100px">
+      <legend>Concern</legend>
+      <div id="threecolumn">
     
        <p><H2>Please select your primary concern for your loved one: </H2></p>
           <input type="radio" name="choiceOne" value="Forgetfulness" />Forgetfulness<br>
-
           <input type="radio" name="choiceOne" value="Fall Hazard" />Fall Hazard<br>
-
           <input type="radio" name="choiceOne" value="Physical Health" />Physical Health<br>
-
           <input type="radio" name="choiceOne" value="Peace Of Mind" />Peace Of Mind<br>
-
-          <input type="radio" name="choiceOne" value="Convenience" />Convenience<br>
-
           <button onclick = "Selection();"> Submit </button>
-      </div>
+          <p></p>
+       <div id = "output"></div>
+       <div id = "output2"></div>
+    </div>
+    </div>
     </fieldset>
-      <div id = "output"></div>
 </body>
  </html>
     
