@@ -1,48 +1,80 @@
-<!DOCTYPE html>
-<html lang='EN' DIR 'LTR'>
- <head>
-      <meta http-equiv="Content-Type" content="text.html5" charset="=UTF-8">
-       <title>Steward - Create a Safe Space</title>
-       <link rel = "stylesheet"
-             href = "myStyle.css" />
-  </head>
-  <body>
-       <div id = "topnav">
+ <!DOCTYPE html>
+ <meta charset="utf-8"/>
+
+
+<head>
+    
+    <title>Steward - Create a Safe Space</title>
+    <link rel = "stylesheet"
+          href = "myStyle.css" />
+    <script>
+        function Selection(){
+
+            var choice = document.getElementsByName('choiceOne');
+            var val = "None selected";
+        var forget = ["Virtual Assistant, Medication Alert, Tracking Outside of Home, Smart Plugs" , "Smart Cane, Bed Alert, Webcams, Alexa", "Heart Rate Monitor, Blood Sugar Alert, Blood Pressure Monitor, Temperature Report", "Motion Detectors, Smart Doorbells, Virtual Assistant, Outdoor Motion Lights"];
+        
+
+            for (var i=0; i < choice.length; i++) {
+                currentChoice = choice[i];
+                if ( currentChoice.checked ) { // radio checked?
+                    val = currentChoice.value; // if so, hold its value in val
+                    break; // and break out of for loop
+                }
+            }
+                 
+            var output = document.getElementById("output");         
+            var response = "You selected " + val + " \n";
+            output.innerHTML = response;
+            var output2 = document.getElementById("output2");
+
+            var response2 = "<h2>These items may help you:</h2> \n";
+            output2.innerHTML = response2 + forget[i];
+
+        }
+
+    </script>
+</head>
+
+<body>
+    
+ <div id = "topnav">
         <h1><a href=/home>STEWARD</a></h1> 
         <ul>
             <li><a href=/support>SUPPORT</a></li>
             <li><a href=/dashboard>DASHBOARD</a></li>
             <li><a href=/solutions>SOLUTIONS</a></li>
         </ul>
-        <div class = "banner">
-          <img class = "banner-img" src = "/Hands50Resize.png">
-        </div> 
-      </div>
-        <intro>
-           <div class=column> 
-               <p>Steward is able to integrate technology products to conveniently be able to track movements 
-                and healthcare for your loved one without your intervention, allowing them to remain independent
-                for as long as possible. Possible solutions are listed below.  Please contact us at xxxx@gmail.com or 
-                706-512-9909 for a consult on these or other products that may best solve your unique situation.  We 
-                are available for in home consultations as well.  
-           
-            </p>
-        </div>
-           
-        <div class="row">
-            <div class="threecolumn" style="background-color: #8fbc8f;">
-              <h2>Safety</h2>
+     
+       
+      <fieldset style="margin-top: 100px">
+      <legend>Concern</legend>
+      <div id="threecolumn" >
+    
+       <p><H2>Please select your primary concern for your loved one: </H2></p>
+          <input type="radio" name="choiceOne" value="Forgetfulness" />Forgetfulness<br>
+          <input type="radio" name="choiceOne" value="Fall Hazard" />Fall Hazard<br>
+          <input type="radio" name="choiceOne" value="Physical Health" />Physical Health<br>
+          <input type="radio" name="choiceOne" value="Peace Of Mind" />Peace Of Mind<br>
+          <button onclick = "Selection();"> Submit </button>
+          <p></p>
+       <div id = "output"></div>
+       <div id = "output2"></div>
+    </div>
+    </div>
+    </fieldset>
+
+    <div class="row" style=>
+            <div class="threecolumn" style="background-color: #F8F9F9;">
               <ul>
                 <li>
-                    <a href="https://wewalk.io/en" target="_blank">Smart Cane</a>
-                     
+                <a href="https://wewalk.io/en" target="_blank">Smart Cane</a>
+                </li>
+                  <li>
+                  <a href="https://www.gearbest.com/smart-home-controls/pp_236317.html" target="_blank">Gas Detector</a>
                   </li>
                   <li>
-                      <a href="https://www.gearbest.com/smart-home-controls/pp_236317.html" target="_blank">Gas Detector</a>
-                  </li>
-                  
-                  <li>
-                    <a href="https://herohealth.com/our-product?utm_source=google%20merchant&utm_medium=banner&utm_campaign=google%20merchant%2C%20google%20search&gclid=EAIaIQobChMIspXUkoG26AIVRtyGCh3EiAo-EAQYASABEgILCPD_BwE" target="_blank">Medication Reminder</a>
+                  <a href="https://herohealth.com/our-product?utm_source=google%20merchant&utm_medium=banner&utm_campaign=google%20merchant%2C%20google%20search&gclid=EAIaIQobChMIspXUkoG26AIVRtyGCh3EiAo-EAQYASABEgILCPD_BwE" target="_blank">Medication Alert</a>
                 </li>
                 <li>
                   <a href="https://www.vivehealth.com/products/bed-alarm?variant=12226313650211&gclid=EAIaIQobChMIu9v93pi26AIVC2KGCh1gRwSKEAQYAyABEgKDHfD_BwE" target="_blank">Bed Alert</a>
@@ -52,8 +84,7 @@
                 </li>
             </ul>    
             </div>
-            <div class="threecolumn" style="background-color:#9fc69f;">
-              <h2>Convenience</h2>
+            <div class="threecolumn" style="background-color:#F4F6F6;">
               <ul>
                 <li>
                     <a href="https://canary.is/" target="_blank">Monitoring System</a>
@@ -74,8 +105,7 @@
               </li>
             </ul>   
             </div>
-            <div class="threecolumn" style="background-color:#afcfaf;">
-              <h2>Monitoring</h2>
+            <div class="threecolumn" style="background-color:#F2F4F4;">
               <ul>
                 <li>
                     <a href="https://www.amazon.com/Wasserstein-Smart-Motion-Sensor-Smartphone/dp/B07SG24HZ6" target="_blank">Motion Detector</a>
@@ -88,7 +118,7 @@
                     <a href="https://omronhealthcare.com/products/heartguide-wearable-blood-pressure-monitor-bp8000m/" target="_blank">Blood Pressure Tracking</a> 
                   </li>
                   <li>
-                    <a href="https://www.freestylelibre.us/" target="_blank">Blood Sugar Monitor</a>
+                    <a href="https://www.freestylelibre.us/" target="_blank">Blood Sugar Alert</a>
                 </li>
                 <li>
                   <a href="https://www.thetileapp.com/en-us/store/tiles/mate?utm_campaign=830750117&utm_source=google&utm_medium=cpc&utm_content=341462935164&utm_term=tile-e&adgroup=45437686794&&gclid=EAIaIQobChMIj5WhtJq26AIVBmyGCh0odAwGEAAYASAAEgJ6A_D_BwE&gclsrc=aw.ds" target="_blank">Tracking outside of home</a>
@@ -96,5 +126,11 @@
             </ul>   
             </div>
           </div>
-        </intro>
-        </body>
+         
+</body>
+ </html>
+    
+
+
+
+
