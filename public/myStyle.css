@@ -153,7 +153,6 @@ a:hover {
     width: 32%;
     padding: 6px;
     text-align: left;
-    height: 300px; 
     border: black;
   }
   .row:after {
@@ -172,6 +171,9 @@ h2{
   padding: 16px;
   background-color: white;
 }
+
+.threecolumn .column-img{
+    width: 300px
 }
 
 /* Clear floats after the columns */
